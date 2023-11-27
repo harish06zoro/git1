@@ -10,7 +10,7 @@ namespace git1
     {
         static void Main(string[] args)
         {
-            q15();
+            q16();
 
           
         }
@@ -237,8 +237,30 @@ namespace git1
         }
 
 
+        public static void q16()
+        {
+            int number = getinteger("enter the number");
+            double result = sumnaturalnumbers(number);
+            Console.WriteLine(result);
+        }
+        public static double sumnaturalnumbers(int num)
+        {
+            return (num * (num + 1) / 2);
 
+        }
+        public static void q17()
+        {
+            int mark1 = getinteger("enter the mark first subject:");
 
+            int mark2 = getinteger("enter the mark second  subject:");
+            int mark3 = getinteger("enter the mark third subject:");
+            Console.WriteLine(average(mark1, mark2, mark3));
+        }
+        public static double average(int a, int b, int c)
+        {
+            double total = a + b + c;
+            return (total / 3);
+        }
 
 
         
